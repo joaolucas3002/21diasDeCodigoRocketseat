@@ -35,16 +35,7 @@ body {
 
 
 
-@keyframes world {
-   0%{
-      left: 0;
-      transform: translate(-100%, -50%);
-   }
-   100%{
-      left: 100%;
-      transform: translate(0 , -50%);
-   }
-}
+
 
 .H2World {
    background-image: url(../imgs/earth-with-transparent-background-8\ \(1\).png);
@@ -61,12 +52,6 @@ body {
    align-items: center;
    margin: auto;
 
-   animation-name: world;
-   animation-duration: 12s;
-   animation-fill-mode: both;
-   animation-timing-function: cubic-bezier(0, 0, 0, 0);;
-   animation-direction: normal;
-   animation-iteration-count: infinite;
 
    position: absolute;
    color: rgb(255, 255, 230);
