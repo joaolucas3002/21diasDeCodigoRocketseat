@@ -1,3 +1,7 @@
 # 21 Dias de codigo Rocketseat
 
-Desafio de 21 dias da Rocketseat e do marmitech.
+ - Desafio 01 : criar repositório para listar os projetos do desafio
+ 
+ - Desafio 02 : hello world personalizado
+
+
