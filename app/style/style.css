@@ -1,0 +1,82 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   font-size: 62.5%;
+   font-family: 'Poppins', sans-serif;
+}
+
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   background-color: #1d1d26;
+   overflow-x: hidden;
+
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1.6rem;
+}
+
+#root {
+   height: 100%;
+   width: 100%;
+   position: relative;
+   
+   background-image: url(../imgs/pexels-kai-pilger-1341279.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+
+
+@keyframes world {
+   0%{
+      left: 0;
+      transform: translate(-100%, -50%);
+   }
+   100%{
+      left: 100%;
+      transform: translate(0 , -50%);
+   }
+}
+
+.H2World {
+   background-image: url(../imgs/earth-with-transparent-background-8\ \(1\).png);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   height: 300px;
+   width: 300px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 4.4rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+
+   animation-name: world;
+   animation-duration: 12s;
+   animation-fill-mode: both;
+   animation-timing-function: cubic-bezier(0, 0, 0, 0);;
+   animation-direction: normal;
+   animation-iteration-count: infinite;
+
+   position: absolute;
+   color: rgb(255, 255, 230);
+   text-shadow: 1px 1px 2px  #000000;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+
+}
+
+.H2World:hover {
+   animation-play-state: paused;
+}
