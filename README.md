@@ -2,6 +2,6 @@
 
  - Desafio 01 : criar repositório para listar os projetos do desafio
  
- - Desafio 02 : hello world personalizado
+ - Desafio 02 : [hello world personalizado](https://desafio01-xi.vercel.app/)
 
 
