@@ -25,7 +25,7 @@ body {
    height: 100%;
    width: 100%;
    position: relative;
-   
+
    background-image: url(../imgs/pexels-kai-pilger-1341279.jpg);
    background-position: center center;
    background-repeat: no-repeat;
@@ -33,10 +33,10 @@ body {
 
 }
 
-@keyframes helloWorld  { 
+@keyframes helloWorld {
    0% {
       left: 0;
-      transform: translate(-100% , -50%)
+      transform: translate(-100%, -50%)
    }
 
    100% {
@@ -66,12 +66,12 @@ body {
    animation-name: helloWorld;
    animation-iteration-count: infinite;
    animation-timing-function: cubic-bezier(0, 0, 0, 0);
-background-color: #0048ff11;
-border-radius: 50%;
+   background-color: #0048ff11;
+   border-radius: 50%;
 
    position: absolute;
    color: rgb(255, 255, 230);
-   text-shadow: 1px 1px 2px  #000000;
+   text-shadow: 1px 1px 2px #000000;
    left: 50%;
    top: 50%;
    transform: translate(-50%, -50%);
