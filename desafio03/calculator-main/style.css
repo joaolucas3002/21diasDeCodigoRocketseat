@@ -5,9 +5,9 @@
     justify-content: center;
     align-content: center;
     grid-template-columns: repeat(4, 90px);
-    grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 90px);
     border-radius: 15px;
-    height: 680px;
+    height: 630px;
     margin: auto;
 }
 
