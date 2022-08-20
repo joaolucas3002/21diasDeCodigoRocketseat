@@ -13,7 +13,9 @@ var result = null
 var operationLast = ''
 var oneDot = false
 
-number.forEach( number => {
+const ola = [...number]
+
+ola.map( number => {
   number.addEventListener('click', (e) => {
     if ( e.target.innerText === '.' && !oneDot) {
       oneDot = true
@@ -24,6 +26,9 @@ number.forEach( number => {
     underoutput.innerText = output2
   })
 })
+
+
+console.log(ola);
 
 operation.forEach( (operation) => {
   operation.addEventListener('click', (e) => {
@@ -49,16 +54,18 @@ function clearVar(name = '') {
 }
 
 function mathOperation() {
+  const value1 = parseFloat(result)
+  const value2 = parseFloat(output2)
   if (operationLast === "x") {
-    result = parseFloat(result) * parseFloat(output2);
+    result = value1 * value2;
   } else if (operationLast === "+") {
-    result = parseFloat(result) + parseFloat(output2);
+    result = value1 + value2;
   } else if (operationLast === "-") {
-    result = parseFloat(result) - parseFloat(output2);
+    result = value1 - value2;
   } else if (operationLast === "/") {
-    result = parseFloat(result) / parseFloat(output2);
+    result = value1 / value2;
   } else if (operationLast === "%") {
-    result = parseFloat(result) % parseFloat(output2);
+    result = value1 % value2;
   }
 }
 
