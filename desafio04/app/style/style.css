@@ -55,7 +55,7 @@ h2{
    font-size:10rem;
 }
 
-p{
+p, .voltar{
    font-size:2.6rem;
 }
 
@@ -64,6 +64,8 @@ p{
 }
 
 .voltar{
+   background-color: transparent;
+   border: none;
    color: hsl(39, 100%, 59%);
 }
 
