@@ -1,23 +1,28 @@
-const root  = document.getElementById("root")
+import { createElement , createLoad , styleLoad } from './funcs.js'
 
-const createElement = setFuncCreateElement(document,Object, Array)
+const root = document.getElementById('root')
 
-function setFuncCreateElement(document,Object, Array) {
-   return (typeDiv, ParentDiv, text, attribute) =>{
-   const element = document.createElement(typeDiv)
+const sec = createElement("section", root, "", {class:"sect"})
 
-   text !== undefined && text !== '' ? element.append(text) : text
+createLoad(sec, "cont1")
 
-   attribute !== undefined && attribute !== ''
-      ? Object.keys(attribute).map((a) => element.setAttribute(a, attribute[a]))
-      : attribute
+createLoad(sec, "cont2")
 
-   ParentDiv !== undefined && ParentDiv !== ''
-      ? ParentDiv.append(element)
-      : ParentDiv
+createLoad(sec, "cont3")
 
-      return element
-}}
+createElement("button", root, "My Stacks", {class:"button"})
+
+const button = document.querySelector(".button")
+
+button.addEventListener("click", () =>{
+
+   styleLoad('.cont1', 70,"HTML 5", "#e34f26")
+
+   styleLoad('.cont2', 79,"CSS 3", "#1577b4")
+
+   styleLoad('.cont3', 60,"JavaScript", "#ead41c")
+   
+})
 
 
-createElement("h2", root ,  "Hello World", {class:"H2World"})
+
