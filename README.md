@@ -14,3 +14,7 @@
 
 - Desafio 07 : [Timer](https://desafio07-ting.netlify.app/)
 
+- Desafio 08 : [Loggle](https://desafio08-ting.netlify.app/)
+
+- Desafio 09 : [Loading](https://desafio09-ting.netlify.app/)
+
