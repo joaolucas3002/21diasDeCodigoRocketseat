@@ -1,0 +1,191 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   font-size: 62.5%;
+   font-family: 'Roboto', sans-serif;
+   --color: #077853;
+   --color-hover: #044832;
+   --darkGray: #1f1f1f;
+   --gray: #252527;
+   --lightGray: #5c5c5c;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 1.6rem;
+   font-family: 'Roboto', sans-serif;
+}
+
+#root {
+   height: 100%;
+   width: 100%;
+   position: relative;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+   background-color: var(--darkGray);
+}
+
+.cont{
+   border-radius: 20px;
+   height: 550px;
+   width: 350px;
+   background-color: var(--gray);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-inline: 2.5rem;
+
+}
+
+
+
+.cont h2 {
+   color: aliceblue;
+   font-size: 3rem;
+}
+
+
+
+form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   gap: .4rem;
+   margin-top: 1.2rem;
+}
+
+
+
+.containerForm {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   height: 6.7rem;
+}
+
+form .containerForm input,form button.containerForm  {
+   height: 50px;
+   width: 300px;
+   border-radius: 40px;
+   border: none;
+   font-size: 1.6rem;
+}
+
+form button.containerForm  {
+   margin-top: .5rem;
+}
+
+
+.containerForm input {
+   top: 0;
+   left: 0;
+   background-color: var(--darkGray);
+   color: var(--lightGray);
+   padding-left: 4rem;
+   padding-right: 3.3rem;
+   font-size: 1.6rem;
+}
+
+.containerForm svg {
+   position: absolute;
+   left: 15px;
+   top: 16px;
+}
+
+.containerForm svg  {
+   fill: var(--lightGray);
+}
+
+.containerForm input:focus{
+   outline: 2px solid var(--color);
+}
+
+.containerForm input:focus + svg{
+   fill: var(--color);
+}
+
+
+
+.containerForm .eyeContainer{
+   position: absolute;
+   right: 43px;
+   top: 2px;
+}
+
+.containerForm .eyeContainer svg{
+   fill: var(--color);
+}
+
+.containerForm .eyeContainer svg:hover{
+   fill: var(--color-hover);
+}
+
+.eyeContainer svg:nth-child(1){
+   display: block;
+}
+
+.eyeContainer svg:nth-child(2){
+   display: none;
+}
+
+.visible svg:nth-child(1){
+   display: none;
+}
+
+.visible svg:nth-child(2){
+   display: block;
+}
+
+.containerForm span{
+   font-size: 14px;
+   padding-left: 15px;
+}
+
+.containerForm .erro{
+   color: hsl(0, 100%, 35%);
+}
+
+
+
+.cont form button {
+   background-color: var(--color);
+   font-weight: bold;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: aliceblue;
+}
+
+.cont form button:hover {
+   background-color: var(--color-hover);
+   }
+   
+
+
+.cont > div{
+   margin: 1.5rem auto 0;
+   color: var(--color);
+   font-size: 1.8rem;
+
+}
+
+.cont > div:hover{
+   text-decoration:underline;
+   cursor: pointer;
+}
+
+
