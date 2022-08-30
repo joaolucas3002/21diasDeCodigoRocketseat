@@ -1,0 +1,152 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   font-size: 62.5%;
+   font-family: 'Poppins', sans-serif;
+   --timer: .5s;
+   --colorSVG:#1d1d26;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   background-color: var(--colorSVG);
+   overflow-x: hidden;
+
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1.6rem;
+}
+
+#root {
+   height: 100%;
+   width: 100%;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: aliceblue;
+}
+
+#root > main {
+   background-color: rgb(218, 218, 218);
+   height: 200%;
+   width: 100%;
+}
+
+#root > aside {
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   height: 100vh;
+   width: 70px;
+   background-color: hsl(145, 72%, 37%);
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   gap: 5px;
+   padding: 0 1rem;
+   transition: width var(--timer), padding var(--timer);
+}
+
+.containerHamburger {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 5rem;
+   height: 5rem;
+   gap: 4.5px;
+   margin-top: 5px;
+   padding: 10px;
+   cursor: pointer;
+}
+
+.containerHamburger > div {
+   background-color: var(--colorSVG);
+   height: 2.4px;
+   width: 2.6rem;
+   border-radius: 15px;
+   transition: transform var(--timer), opacity var(--timer);
+}
+
+.button {
+   position: relative;
+   padding: 10px;
+   border-radius: 15px;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   justify-content: end;
+   transform: justify-content var(--timer);
+   cursor: pointer;
+}
+
+.button .text{
+   opacity: 0;
+   width: 0;
+   height: 0;
+   display: flex;
+   position: absolute;
+   left: -100px;
+   transition: opacity calc(var(--timer) / 2), width var(--timer), height var(--timer);
+}
+
+.button:nth-of-type(2) {
+   background-color: hsl(145, 72%, 32%);
+}
+
+.button:hover{
+   background-color: hsl(145, 72%, 87%);
+}
+
+.button:nth-of-type(2):hover {
+   background-color: hsl(145, 72%, 87%);
+}
+
+.button:hover .text{
+   color: var(--colorSVG);
+}
+
+svg {
+   display: flex;
+   z-index: 10;
+   height: 3rem;
+   width: 3rem;
+   fill: var(--colorSVG);
+}
+
+#root > aside.max {
+   width: 200px;
+   padding: 0 20px;
+}
+
+#root > aside.max .containerHamburger div:nth-of-type(1) {
+   transform: rotate(-46deg) translate(-5px, 5px);
+}
+
+#root > aside.max .containerHamburger div:nth-of-type(2) {
+   opacity: 0;
+}
+
+#root > aside.max .containerHamburger div:nth-of-type(3) {
+   transform: rotate(46deg) translate(-5px, -5px);
+}
+
+#root > aside.max  .button {
+   width: 100%;
+   justify-content: end;
+}
+
+#root > aside.max  .button .text{
+   opacity: 1;
+   width: auto;
+   height: auto;
+   position: absolute;
+   left: 10px;
+}
