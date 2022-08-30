@@ -1,0 +1,157 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   font-size: 62.5%;
+   font-family: 'Roboto';
+   --border: 1.5rem;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1.6rem;
+   background-color: rgb(219, 219, 219);
+}
+
+#root {
+   height: 100%;
+   width: 100%;
+   position: relative;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1.4rem;
+   background-color: #D9D9D9;
+}
+
+.secQuiz {
+   width: min(100%, 60rem);
+   border-radius: var(--border);
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 1rem;
+   background-color: #D5DDE6;
+   box-shadow: 1px 1px 0.3rem rgba(0, 0, 0, 0.29);
+   justify-content: center;
+   align-items: center;
+}
+
+.secQuiz .contText {
+   width: 100%;
+   background-color: #405366;
+   text-align: center;
+   padding: 2rem 15px;
+   color: beige;
+   font-size: 2.4rem;
+   box-shadow: 1px 1px 0.3rem rgba(0, 0, 0, 0.29);
+   border-radius: var(--border) var(--border) 0 0;
+}
+
+.contButton {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   gap: 1.5rem;
+   padding: 1.5rem;
+}
+
+.secQuiz .button {
+   font-weight: 500;
+   border-radius: 2rem;
+   border: none;
+   padding: 1.2rem 0;
+   font-size: 2.2rem;
+   width: min(27rem, 100%);
+   background-color: hsl(212, 8%, 75%);
+   color: hsl(60, 6%, 100%);
+   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.371);
+   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.344);
+}
+
+.secQuiz .states[data-states="true"] {
+   background-color: hsl(122, 67%, 75%);
+}
+
+.secQuiz .states[data-states="false"] {
+   background-color: hsl(0, 67%, 75%);
+}
+
+
+
+
+
+
+
+
+
+
+
+.endContQuiz {
+   background-color: #405366;
+
+   padding: 60px 30px 50px;
+   border-radius: var(--border);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.344);
+}
+
+.endContText{
+   color: #D9D9D9;
+   color: #fff;
+   font-size: 3rem;
+   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.371);
+
+}
+
+
+
+.punctuation {
+   font-weight: 500;
+   font-size: 1.6rem;
+   padding: 1.2rem;
+
+   color: #fff;
+
+
+   align-items: center;
+   justify-content: center;
+}
+
+.endbutton {
+   font-weight: 500;
+   border-radius: 2rem;
+   border: none;
+   padding: 1.2rem 2rem;
+   font-size: 2rem;
+   background-color: #D5DDE6;
+}
+
+
+@media (max-width: 610px) {
+   .secQuiz {
+      width: 37rem;
+   }
+
+   .contButton {
+      gap: 1.5rem;
+   }
+
+   .secQuiz .button {
+      width: min(100%);
+   }
+}
