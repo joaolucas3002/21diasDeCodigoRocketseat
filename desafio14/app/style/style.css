@@ -1,0 +1,259 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   font-size: 62.5%;
+   --color-card: hsl(141, 8%, 27%);
+   --bg-color: hsl(141, 89%, 25%);
+   --bg-color2: hsl(141, 89%, 20%);
+   --bg-color-hover: hsl(141, 89%, 15%);
+   --light: #f6fafe;
+   --bg-color-Img: rgba(174, 172, 172, 0.255);
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 1.6rem;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+body #root {
+   width: 100%;
+   height: min(100%, auto);
+}
+
+header {
+   height: 9rem;
+   width: 100%;
+   background-color: var(--bg-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-inline: 3rem;
+}
+
+header .container {
+   height: 100%;
+   width: min(100%, 110rem);
+   display: grid;
+   padding-inline: 5%;
+   grid-template-areas: 'logo nav';
+   grid-template-columns: 20% 80%;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.logo {
+   gap: logo;
+   color: white;
+   font-size: 2.4rem;
+   cursor: pointer;
+   text-align: center;
+}
+
+nav {
+   grid-area: nav;
+   height: auto;
+   display: grid;
+   grid-template-rows: 1fr;
+   grid-template-columns: 70% 10% 10% 10%;
+   align-items: center;
+   justify-content: space-between;
+   gap: 0 10px;
+}
+
+.containerResearch {
+   display: flex;
+   flex-direction: row;
+   position: relative;
+   width: auto;
+   padding: 10px;
+   background-color: white;
+   height: 4.4rem;
+   border-radius: 15px;
+}
+
+.containerResearch input {
+   background-color: transparent;
+   border: none;
+   outline: none;
+   height: 2.4rem;
+   width: 100%;
+   font-size: 2rem;
+   padding-right: 2.6rem;
+}
+
+.containerResearch button {
+   height: 2.4rem;
+   width: 2.4rem;
+   position: absolute;
+   border: none;
+   background-color: transparent;
+   right: 10px;
+}
+
+.containerResearch button svg {
+   fill: var(--bg-color);
+}
+
+.home,
+.basket,
+.heart {
+   text-align: center;
+}
+
+.home svg,
+.basket svg,
+.heart svg {
+   fill: var(--light);
+}
+
+.home svg,
+.basket svg {
+   height: 22px;
+   width: 2.4rem;
+}
+
+.heart svg {
+   height: 2.4rem;
+   width: 2.4rem;
+}
+
+main {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   gap: 3rem;
+   padding-block: 4rem;
+   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.373);
+   background-color: var(--light);
+}
+
+main .container {
+   height: 100%;
+   width: min(100%, 110rem);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+}
+
+.card .cardLink {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   width: 250px;
+   height: 375px;
+   background-color: var(--light);
+   text-decoration: none;
+   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.196);
+   color: var(--color-card);
+   padding: 10px;
+}
+
+.containerImg {
+   background-color: var(--bg-color-Img) ;
+   width: 100%;
+   height: 55%;
+   margin-bottom: 10px;
+}
+
+.containerInfo {
+   padding-bottom: 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   gap: 1rem;
+}
+
+.secInformation {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.containerStars svg {
+   fill: hsl(0, 0%, 80%);
+   height: 1.6rem;
+   width: 1.6rem;
+}
+
+.containerStars svg.star {
+   fill: hsl(64, 80%, 60%);
+}
+
+.secProductValue {
+   display: flex;
+   flex-direction: column;
+   -webkit-box-pack: start;
+   gap: 0.6rem;
+}
+
+.originalProductValue {
+   text-decoration: line-through;
+   font-size: 1.4rem;
+}
+
+.productValue {
+   font-size: 2.5rem;
+}
+
+.buttonMoreProducts {
+   height: 3.5rem;
+   width: 28rem;
+   border: none;
+   background-color: var(--bg-color);
+   color: var(--light);
+   border-radius: 0.5rem;
+   font-size: 1.7rem;
+}
+
+.buttonMoreProducts:hover {
+   background-color: var(--bg-color-hover);
+}
+
+footer {
+   width: 100%;
+   height: 130px;
+   position: relative;
+   background-color: var(--bg-color);
+   display: grid;
+   justify-content: center;
+   grid-template-columns: 1fr;
+   grid-template-rows: 4rem auto;
+   align-items: center;
+}
+
+footer button {
+   height: 4rem;
+   width: 100%;
+   background-color: var(--bg-color2);
+   border: none;
+   border-block: 0.2rem solid var(--bg-color-hover);
+   font-size: 1.6rem;
+}
+
+footer button a { 
+   color: var(--light);
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   width: 100%;
+}
+
+footer button:hover {
+   background-color: var(--bg-color-hover);
+}
