@@ -22,3 +22,10 @@
 
 - Desafio 11 : [forms](https://desafio11-ting.netlify.app/)
 
+- Desafio 12 : [galeria](https://desafio12-ting.netlify.app/)
+
+- Desafio 13 : [navigation bar](https://desafio13-ting.netlify.app/)
+
+- Desafio 14 : [Quiz](https://desafio14-ting.netlify.app/)
+
+- Desafio 15 : [E-commerce](https://desafio15-ting.netlify.app/)
