@@ -13,3 +13,4 @@ const [...keys] = document.querySelectorAll('.secKey div')
 keys.map((Element) => Element.addEventListener('click', (e) => playAudio(e.target.getAttribute('data-key'))))
 
 document.addEventListener('keydown', (e) => playAudio(e.key))
+
