@@ -1,0 +1,213 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --column-gutter: 1.4rem;
+   --columns: 3;
+   font-size: 62.5%;
+   
+}
+
+html,
+body {
+   font-size: 1.6rem;
+   height: 100%;
+   width: 100%;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#root {
+   height: 100%;
+   width: 100%;
+   display: grid;
+   grid-template:
+      "header"
+      "main"
+      "footer"
+   ;
+   grid-template-rows: 8rem auto 9rem;
+   gap: 2rem;
+}
+
+
+svg {
+   width: 2.4rem;
+}
+
+header {
+   grid-area: header;
+   height: 100%;
+   width: 100%;
+   background-color: hsl(0, 0%, 98%);
+   box-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 0.163);
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.secHeader {
+   width: min(100%, 120rem);
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.formHeader {
+   width: min(60%, 65rem);
+   height: 4rem;
+   border-radius: 5rem;
+   position: relative;
+   display: flex;
+   background-color: rgb(233, 233, 233);
+   align-items: center;
+   justify-content: space-between;
+}
+
+.inputHeader {
+   background-color: transparent;
+   height: 100%;
+   width: 100%;
+   outline: none;
+   border: none;
+   border-radius: 5rem;
+   font-size: 2rem;
+   padding-left: 1.5rem;
+   padding-right: 5.5rem;
+}
+
+.btn {
+   height: 100%;
+   width: 5rem;
+   border-radius: 0 5rem 5rem 0;
+   border: none;
+   cursor: pointer;
+   position: absolute;
+   top: 0;
+   background-color: rgb(201, 201, 201);
+   right: 0;
+}
+
+.btn svg {
+   fill: rgb(246, 246, 246);
+}
+
+main {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.secMain {
+   height: 100%;
+   width: min(100%, 120rem);
+   display: grid;
+   padding-inline: 1.4rem;
+   gap: var(--column-gutter);
+   align-items: start;
+   grid-template: "Guery Guery Guery";
+   grid-template-columns: repeat(3, minmax(0, 1fr));
+   grid-template-rows: 4rem 100%;
+   position: relative;
+}
+
+.Guery {
+   grid-area: Guery;
+   height: 4rem;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   font-size: 2rem;
+   text-transform: capitalize;
+   padding-left: 3rem;
+}
+
+.containerColumn {
+
+   display: flex;
+   flex-direction: column;
+   gap: var(--column-gutter);
+
+}
+
+.containerImg {
+   width: 100%;
+   height: auto;
+   position: relative;
+   transition: transform 0.5s;
+}
+
+
+.containerImg img {
+   height: 100%;
+   object-fit: cover;
+   width: 100%;
+   border-radius: 1.5rem;
+
+}
+
+
+.containerImg:hover {
+   z-index: 2;
+   transform: scale(1.02);
+}
+
+.linkImg {
+   height: 3rem;
+   width: 100%;
+   position: absolute;
+   bottom: .4rem;
+   text-decoration: none;
+   background-color: rgba(0, 0, 0, 0.362);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 0 0 1.5rem 1.5rem;
+   opacity: 0;
+   transition: opacity 0.5s;
+}
+
+.linkImg svg {
+   fill: hsl(0, 0%, 90%);
+   width: 2.4rem;
+}
+
+.containerImg:hover .linkImg {
+   opacity: 1;
+}
+
+
+.Erro {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+
+footer {
+   grid-area: footer;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   flex-direction: column-reverse;
+}
+
+
+@media (max-width: 708px) {
+
+   .secMain {
+      grid-template: "Guery";
+
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+   }
+
+}
