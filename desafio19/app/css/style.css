@@ -1,0 +1,118 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   font-size: 62.5%;
+}
+
+html,
+boty {
+   width: 100%;
+   height: 100%;
+   font-size: 1.6rem;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: antiquewhite;
+}
+
+#root {
+   width: 100%;
+   height: max(100%,100vh);
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   align-items: center;
+}
+
+header{
+height: 60px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+form{
+background-color: rgb(204, 216, 227);
+height: 40px;
+padding: 5px;
+width: min(70%,90rem);
+border-radius: .5rem;
+}
+
+form input{
+height: 100%;
+width: 100%;
+padding-left: 4.1rem;
+font-size: 1.7rem;
+background-color: transparent;
+outline: none;
+border: none;
+}
+
+main{
+   height: 100%;
+   padding-block: 2rem;
+   display: flex;
+   width: min(100%,900px);
+   justify-content: center;
+   align-items: center;
+
+}
+
+.container{
+   height: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+.buttonForm{
+   position: absolute;
+   background-color: transparent;
+   border: none;
+   height: 30px;
+   width: 40px;
+   text-align: center;
+   padding: 3px;
+}
+
+.buttonForm svg{
+   width: 2.4rem;
+}
+
+.contEmoji {
+   height: 130px;
+   width: 130px;
+   background-color: rgb(222, 222, 222);
+   border-radius: 1rem;
+}
+
+.cardEmoji {
+   border-radius: 1rem;
+   background-color: rgb(55, 61, 84);
+   color: #fff;
+   height: 100%;
+   width: 130px;
+   padding: 5px;
+   font-size: 4.5rem;
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.248);
+}
+
+.emojiName {
+   font-size: 1.4rem;
+   text-align: center;
+   text-transform: capitalize;
+}
