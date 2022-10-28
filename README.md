@@ -2,7 +2,7 @@
 
 - Desafio 01 : Criar repositório para listar os projetos do desafio
  
-- Desafio 02 : [Hello world personalizado](https://desafio02-xi.vercel.app/)
+- Desafio 02 : [Hello world personalizado](https://desafio02-ting.netlify.app/)
  
 - Desafio 03 : [Botão animado](https://desafio03-xi.vercel.app/)
  
