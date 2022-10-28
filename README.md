@@ -20,12 +20,25 @@
 
 - Desafio 10 : [Lib Particle]()
 
-- Desafio 11 : [forms](https://desafio11-ting.netlify.app/)
+- Desafio 11 : [Forms](https://desafio11-ting.netlify.app/)
 
-- Desafio 12 : [galeria](https://desafio12-ting.netlify.app/)
+- Desafio 12 : [Galeria](https://desafio12-ting.netlify.app/)
 
-- Desafio 13 : [navigation bar](https://desafio13-ting.netlify.app/)
+- Desafio 13 : [Navigation bar](https://desafio13-ting.netlify.app/)
 
 - Desafio 14 : [Quiz](https://desafio14-ting.netlify.app/)
 
 - Desafio 15 : [E-commerce](https://desafio15-ting.netlify.app/)
+
+- Desafio 16 : [Using a weather API](https://desafio16-ting.netlify.app/)
+
+- Desafio 17 : [Keyboard Events
+](https://desafio17-ting.netlify.app/)
+
+- Desafio 18 : [Password Generator](https://desafio18-ting.netlify.app/)
+
+- Desafio 19 : [Unsplash API](https://desafio19-ting.netlify.app/)
+
+- Desafio 20 : [Emoji Picker](https://desafio20-ting.netlify.app/)
+
+- Desafio 21 : [Portfolio](https://desafio21-ting.netlify.app/)
